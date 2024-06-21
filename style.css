@@ -1,0 +1,107 @@
+/* ########### Defaul ########### */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ############## Desktop ########## */
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    background-color: blue;
+    height: 50px;
+}
+nav ul{
+    list-style: none;
+    padding: 12px;
+}
+nav ul li{
+    float: left;
+    color: #909090;
+    padding: auto;
+}
+nav ul li.f-right{
+    float: right;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 14px;
+    color: white;
+}
+nav ul li a:hover {
+    background-color: blue;
+    color: white;
+}
+nav ul li.ham{
+    display: none;
+}
+
+/* ####### :empty ######## */
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.ade{
+    width: 200px;
+    height: 100px;
+    background-color: coral;
+}
+p:empty{
+    width: 200px;
+    height: 100px;
+    background-color: teal;
+}
+
+p::before{
+    content: "ahmad";
+}
+/* #############mobile################# */
+@media screen and (max-width: 450px){
+        nav{
+            width: 100%;
+            background-color: blue;
+            height: 50px;   
+
+    }
+    nav ul li{
+        display: none;
+    }
+    .Home{
+        display: block;
+    }
+    nav ul li.ham{
+        display: block;
+        float: left;
+    }
+    nav ul{
+        list-style: none;
+        padding: 12px;
+    }
+    nav ul li{
+        float: left;
+        color: #909090;
+        padding: auto;
+    }
+    nav ul li.f-right{
+        float: right;
+    }
+    nav ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 14px;
+        color: white;
+    }
+    .class{
+        display: block;
+    }
+}
